@@ -6,7 +6,7 @@ class Category extends Model {
       {
         descCatProd: Sequelize.STRING,
       },
-      { sequelize }
+      { sequelize, tableName: 'categoriaproduto', timestamps: true }
     );
   }
 }

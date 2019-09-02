@@ -9,7 +9,7 @@ class User extends Model {
         loginUsr: Sequelize.STRING,
         senhaUsr: Sequelize.STRING,
       },
-      { sequelize }
+      { sequelize, tableName: 'usuarios', timestamps: true }
     );
   }
 }
