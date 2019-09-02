@@ -4,7 +4,7 @@ class User extends Model {
   static init(sequelize) {
     super.init(
       {
-        idUse: {
+        idUsr: {
           type: Sequelize.INTEGER,
           primaryKey: true,
         },
