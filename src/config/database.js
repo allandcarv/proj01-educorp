@@ -4,4 +4,7 @@ module.exports = {
   username: 'root',
   password: '123456',
   database: 'proj01-educorp',
+  define: {
+    timestamps: true,
+  },
 };

@@ -4,9 +4,13 @@ class Category extends Model {
   static init(sequelize) {
     super.init(
       {
+        idCatProd: {
+          type: Sequelize.INTEGER,
+          primaryKey: true,
+        },
         descCatProd: Sequelize.STRING,
       },
-      { sequelize, tableName: 'categoriaproduto', timestamps: true }
+      { sequelize, tableName: 'categoriaproduto' }
     );
   }
 }

@@ -11,12 +11,12 @@ module.exports = {
         type: Sequelize.STRING(20),
         allowNull: false,
       },
-      created_at: {
+      createdAt: {
         type: Sequelize.DATE,
         allowNull: false,
         defaultValue: Sequelize.literal('NOW()'),
       },
-      updated_at: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: false,
         defaultValue: Sequelize.literal('NOW()'),
