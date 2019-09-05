@@ -1,0 +1,40 @@
+body {
+  height: 100vh;
+  background-color: #e6e6e6;
+}
+
+.auth-content,
+.register-content,
+.home-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-modal,
+.register-modal {
+  background-color: #fff;
+  width: 350px;
+  padding: 35px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-modal {
+  background-color: #fff;
+  width: 700px;
+  padding: 35px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#product,
+#error-message,
+#product-table {
+  display: none;
+}

@@ -1,24 +1,25 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 
 import routes from './routes';
 import './database';
-import passport from './app/middlewares/passport';
-import session from './app/middlewares/session';
+import session from './config/session';
 
 class App {
   constructor() {
     this.server = express();
+    this.server.use(session);
 
     this.middlewares();
     this.routes();
   }
 
   middlewares() {
+    this.server.use('/public', express.static('./src/assets'));
     this.server.use(express.json());
 
-    this.server.use(session);
-    this.server.use(passport.initialize());
-    this.server.use(passport.session());
+    this.server.use(bodyParser.urlencoded({ extended: true }));
+    this.server.use(bodyParser.json());
   }
 
   routes() {
