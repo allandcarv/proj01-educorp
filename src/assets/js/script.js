@@ -30,10 +30,11 @@ const authenticate = () => {
     .post('/signin', user)
     .then(() => window.location.assign('/'))
     .catch(() => {
-      email.value = '';
-      password.value = '';
-      document.querySelector('#error-message').style.display = 'initial';
+      alert('Email e/ou senha inválido(s)');
     });
+
+  email.value = '';
+  password.value = '';
 };
 
 const loadCategories = () => {

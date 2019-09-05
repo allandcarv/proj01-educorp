@@ -34,7 +34,6 @@ body {
 }
 
 #product,
-#error-message,
 #product-table {
   display: none;
 }

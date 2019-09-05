@@ -19,11 +19,11 @@ function render(input, out, __component, component, state) {
 
   component_globals_tag({}, out);
 
-  out.w("<div class=\"auth-content\"><div class=\"auth-modal\"><form><small id=\"error-message\">Usuário e/ou senha incorreto(s)</small><div class=\"form-group\"><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\"><i class=\"fas fa-at\"></i></span></div><input id=\"inputEmail\" type=\"email\" class=\"form-control\" name=\"email\" placeholder=\"Entre seu email...\"></div><div class=\"input-group mt-3\"><div class=\"input-group-prepend\"><span class=\"input-group-text\"><i class=\"fas fa-asterisk\"></i></span></div><input id=\"inputPassword\" type=\"password\" class=\"form-control\" name=\"password\" placeholder=\"Entre sua senha...\"></div></div><button id=\"submit\" type=\"button\" class=\"btn btn-primary\">Entrar</button><button id=\"register\" type=\"button\" class=\"btn btn-secondary ml-2\">Cadastrar Acesso</button></form></div></div><script src=\"/public/js/script.js\"></script>");
+  out.w("<div class=\"auth-content\"><div class=\"auth-modal\"><form><div class=\"form-group\"><div class=\"input-group\"><div class=\"input-group-prepend\"><span class=\"input-group-text\"><i class=\"fas fa-at\"></i></span></div><input id=\"inputEmail\" type=\"email\" class=\"form-control\" name=\"email\" placeholder=\"Entre seu email...\"></div><div class=\"input-group mt-3\"><div class=\"input-group-prepend\"><span class=\"input-group-text\"><i class=\"fas fa-asterisk\"></i></span></div><input id=\"inputPassword\" type=\"password\" class=\"form-control\" name=\"password\" placeholder=\"Entre sua senha...\"></div></div><button id=\"submit\" type=\"button\" class=\"btn btn-primary\">Entrar</button><button id=\"register\" type=\"button\" class=\"btn btn-secondary ml-2\">Cadastrar Acesso</button></form></div></div><script src=\"/public/js/script.js\"></script>");
 
   init_components_tag({}, out);
 
-  await_reorderer_tag({}, out, __component, "27");
+  await_reorderer_tag({}, out, __component, "26");
 
   out.w("</body></html>");
 }
